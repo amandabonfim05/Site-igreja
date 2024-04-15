@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/youtube.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <title>IBF</title>
+    <style>
+         * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Open Sans";
+            background-color: rgb(30, 28, 28);
+            color: rgba(240, 248, 255, 0.872);
+            margin: 0;
+            padding: 0;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            
+        }
+        .logo {
+            float: left;
+            height: 40px;
+            margin-left: 50px;
+            margin-top: 10px;
+            transform: scale(1.5);
+            position: relative;
+            z-index: 2;
+        }
+        .log {
+            max-width: 100%;
+            max-height: 100%;
+            margin-top: -300px;
+            border-radius: 50px;
+           
+        }
+        .topnav a {
+            float: right;
+            display: block;
+            color: rgba(255, 255, 255, 0.526);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .topnav a .gg-youtube {
+            transform: scale(1.5);
+            margin-top: 5px;
+        }
+        .topnav a .gg-youtube:hover {
+            color: rgb(221, 14, 14);
+        }
+        .topnav a .gg-instagram:hover {
+            color: rgb(177, 22, 105);
+        }
+        .topnav a .gg-facebook:hover {
+            color: rgb(37, 37, 138);
+        }
+        .topnav a .gg-menu {
+            margin-top: 10px;
+        }
+        .topnav a .gg-search {
+            margin-top: 2px;
+        }
+        .topnav a.special {
+            border-right: 1px solid white;
+        }
+        .topnav a:hover {
+            color: aliceblue;
+        }
+        @media screen and (max-width: 600px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            overflow-x: hidden;
+            padding-top: 60px;
+            font-size: small;
+        }
+        .sidenav a {
+            color: aliceblue;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .sidenav a:hover {
+            background-color: antiquewhite;
+            color: rgb(36, 41, 41);
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin-left: 220px;
+        }
+        .colum {
+            float: left;
+            width: 25%;
+            padding: 15px;
+            max-width: calc(100% / 5);
+            text-align: left;
+            margin-top: -200px;
+        }
+        .row::after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width: 600px) {
+            .colum {
+                width: 100%;
+            }
+        }
+        .paragrafo {
+            text-align: left;
+            margin-top: -300px;
+            margin-left: 278px;
+            color: rgb(195, 165, 17);
+            max-width: calc(100% - 220px);
+            
+        }
+        .w3-dropdown-hover {
+            position: static;
+             float: left;
+             margin-right: 15px; /* Espaçamento entre os itens */
+        }
+        
+  /* Estilizando o botão do dropdown */
+        .w3-dropdown-hover .w3-button {
+             padding: 8px 16px;
+         }
+  
+  /* Estilizando o conteúdo do dropdown */
+         .w3-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+  
+  /* Estilizando os itens do dropdown */
+        .w3-dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+  
+  /* Mudando a cor de fundo do dropdown ao passar o mouse sobre ele */
+        .w3-dropdown-content a:hover {
+            background-color: #ddd;
+        }
+  
+  /* Exibindo o dropdown quando o cursor estiver sobre o botão */
+        .w3-dropdown-hover:hover .w3-dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <img src="imagens/img1.png" alt="Logo IBG" class="logo">
+        <a href="www.youtube.com/@IgrejaBatistadaFamiliaIBF"><i class="gg-youtube"></i></a>
+        <a href="https://www.instagram.com/ibfsalvador?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="gg-instagram"></i></a>
+        <a href="https://www.facebook.com/IgrejaBatistadaFamilia?mibextid=ZbWKwL"><i class="gg-facebook"></i></a>
+        
+        <a href="sobre.html" class="special" onclick="openNav()"><i class="gg-menu"></i></a>
+        <a href="#"><i class="gg-search"></i></a>
+
+    </div>
+   
+    <div class="sidenav">
+        <a href="agenda.html">Agenda</a>
+        <a href="historia.html">Historia</a>
+        <a href="horarios.html">Horarios dos cultos</a>
+        <a href="palavra.html">Palavra do pastor</a>
+        <a href="visao.html">Visão,missão e valores</a>
+    </div>
+    <div class="content">
+        <img src="imagens/img11.jpg" alt="agenda" class="log">
+    </div>
+
+</body>
+</html>

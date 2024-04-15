@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igreja Batista da Familia</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/youtube.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Open Sans";
+            background-color: rgb(39, 37, 37);
+            color: rgba(240, 248, 255, 0.872);
+        }
+        h2 {
+            color: rgba(240, 248, 255, 0.64);
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .logo {
+            float: left;
+            height: 40px;
+            margin-left: 50px;
+            margin-top: 10px;
+            transform: scale(1.5);
+            position: relative;
+            z-index: 2;
+        }
+        .topnav a {
+            float: right;
+            display: block;
+            color: rgba(255, 255, 255, 0.526);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin-top: 10px;
+           
+        }
+        .topnav a .gg-youtube {
+            transform: scale(1.5);
+            margin-top: 5px;
+        }
+        .topnav a .gg-youtube:hover {
+            color: rgb(221, 14, 14);
+        }
+        .topnav a .gg-instagram:hover {
+            color: rgb(177, 22, 105);
+        }
+        .topnav a .gg-facebook:hover {
+            color: rgb(37, 37, 138);
+        }
+        .topnav a .gg-menu {
+            margin-top: 10px;;
+        }
+        .topnav a .gg-search {
+            margin-top: 2px;
+        }
+        .topnav a.special {
+            border-right: 1px solid white;
+        }
+        .topnav a:hover {
+            color: aliceblue;
+        }
+        @media screen and (max-width: 600px) {
+            .topnava a {
+                float: none;
+                width: 100%;
+            }
+        }
+        .content {
+            margin-top: 400px;
+        }
+        .animation-container {
+            text-align: center;
+            margin-top: -460px;
+            background-image: url(imagens/img5.jpg);
+            background-size: cover;
+            padding: 50px;
+            position: relative;
+        }
+        .animation-text {
+           display: inline-block;
+           font-size: 100px;
+           font-weight: bold;
+           color: aliceblue;
+           white-space: nowrap;
+           overflow: hidden;
+        }
+        .first-word {
+            display: inline-block;
+            transform-origin: 0 50%;
+            animation: slideAndRotate 2s ease-out forwards;
+            color: rgb(195, 165, 17);
+            margin-right: -100px;
+            
+        }
+       
+        @keyframes slideAndRotate {
+            0% {
+               transform: translateX(0) rotate(0deg); 
+            }
+            50% {
+                transform: translateX(150px) rotate(0deg);
+            }
+            100% {
+                transform: translateX(150px) rotate(-90deg);
+                margin-top: 200px;
+            }
+        }
+        .rest-of-text {
+            display: inline-block;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out 1.5s forwards;
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+               transform: translateX(0);
+            }
+        } 
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .colum {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+        .row::after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width: 600px) {
+            .colum {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="topnav">
+        <img src="imagens/img1.png" alt="Logo da Igreja" class="logo">
+        <a href="www.youtube.com/@IgrejaBatistadaFamiliaIBF"><i class="gg-youtube"></i></a>
+        <a href="https://www.instagram.com/ibfsalvador?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="gg-instagram"></i></a>
+        <a href="https://www.facebook.com/IgrejaBatistadaFamilia?mibextid=ZbWKwL"><i class="gg-facebook"></i></a>
+        
+        <a href="historia.html" class="special" onclick="openNav()"><i class="gg-menu"></i></a>
+        <a href="#"><i class="gg-search"></i></a>
+    </div>
+    <div class="content">
+       <div class="animation-container">
+        <div class="animation-text">
+            <span class="first-word">Igreja</span>
+            <span class="rest-of-text" style="color: rgb(195, 165, 17); font-size: 400px;">B</span><span class="rest-of-text" style="margin-left: -100px;">atista<br> da Familia</span>
+        </div>
+       </div>
+       <div class="row">
+        <div class="colum">
+            <h2>Instagram</h2>
+            <a target="_blank" href="https://www.instagram.com/ibfsalvador?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <img src="imagens/img2.jpeg" alt="Imagem pastor" width="300" height="200">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/ibfsalvador?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <img src="imagens/img3.jpeg" alt="Imagem pastores" width="300" height="200"> 
+            </a>
+        </div>
+        <div class="colum">
+            <h2>facebook</h2>
+            <a target="_blank" href="https://www.facebook.com/IgrejaBatistadaFamilia?mibextid=ZbWKwL">
+                <img src="imagens/img4.jpeg" alt="Imagem batismo" width="300" height="200">
+            </a>
+        </div>
+        <div class="colum">
+            <h2>Endereço</h2>
+            <p>ENDEREÇO: Rua Lívia Giffoni,<br>
+             511 - Loteamento<br>
+             Santa Tereza Luis<br>
+             Anselmo - Salvador - BA -<br>
+             CEP: 40.265-040<br>
+             TELEFONE: 71 3233-4263<br>
+             Email: igrejabatistadafamilia@gm</p>
+        </div>
+        <div class="colum">
+            <h2>Marca Registrada</h2>
+            <p>A marca Igreja Batista da<br>
+             Família juntamente com<br>
+             seus logotipos, são<br>
+             registradas junto ao INPI<br>
+             e protegidos por lei de<br>
+             direitos autorais, e com<br>
+             uso autorizado em todo<br>
+             território brasileiro.</p>
+        </div>
+        <div class="colum">
+            <h2>Aviso Importante</h2>
+            <p>É TERMINANTEMENTE<br>
+             PROIBIDO QUALQUER<br>
+             USO, CÓPIA OU<br>
+             REPRODUÇÃO DAS<br>
+             MARCAS COMERCIAIS,<br>
+             LOGOTIPOS,<br>
+             INFORMAÇÕES,<br>
+             IMAGENS OU<br>
+             DESENHOS SEM A<br>
+             PRÉVIA PERMISSÃO<br>
+             ESCRITA DA IGREJA<br>
+             BATISTA DA FAMÍLIA.</p>
+        </div>
+       </div>
+    </div>
+    
+    
+</body>
+</html>

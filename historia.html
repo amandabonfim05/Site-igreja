@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/youtube.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <title>IBF</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Open Sans";
+            background-color: rgb(39, 37, 37);
+            color: rgba(240, 248, 255, 0.872);
+            margin: 0;
+            padding: 0;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            
+        }
+        .logo {
+            float: left;
+            height: 40px;
+            margin-left: 50px;
+            margin-top: 10px;
+            transform: scale(1.5);
+            position: relative;
+            z-index: 2;
+        }
+        .log {
+            max-width: 100%;
+            max-height: 100%;
+            margin-top: -300px;
+        }
+        .topnav a {
+            float: right;
+            display: block;
+            color: rgba(255, 255, 255, 0.526);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .topnav a .gg-youtube {
+            transform: scale(1.5);
+            margin-top: 5px;
+        }
+        .topnav a .gg-youtube:hover {
+            color: rgb(221, 14, 14);
+        }
+        .topnav a .gg-instagram:hover {
+            color: rgb(177, 22, 105);
+        }
+        .topnav a .gg-facebook:hover {
+            color: rgb(37, 37, 138);
+        }
+        .topnav a .gg-menu {
+            margin-top: 10px;
+        }
+        .topnav a .gg-search {
+            margin-top: 2px;
+        }
+        .topnav a.special {
+            border-right: 1px solid white;
+        }
+        .topnav a:hover {
+            color: aliceblue;
+        }
+        @media screen and (max-width: 600px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            overflow-x: hidden;
+            padding-top: 60px;
+            font-size: small;
+        }
+        .sidenav a {
+            color: aliceblue;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .sidenav a:hover {
+            background-color: antiquewhite;
+            color: rgb(36, 41, 41);
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin-left: 220px;
+        }
+        .paragrafo {
+            text-align: left;
+            margin-top: -300px;
+            margin-left: 220px;
+            color: rgb(195, 165, 17);
+            max-width: calc(100% - 220px);
+            
+        }
+        ol.c {
+            list-style-type: decimal;
+        }
+        .colum {
+            float: left;
+            width: 25%;
+            padding: 15px;
+            max-width: calc(100% / 5);
+            text-align: left;
+        }
+        .row::after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width: 600px) {
+            .colum {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <img src="imagens/img1.png" alt="Logo IBG" class="logo">
+        <a href="www.youtube.com/@IgrejaBatistadaFamiliaIBF"><i class="gg-youtube"></i></a>
+        <a href="https://www.instagram.com/ibfsalvador?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="gg-instagram"></i></a>
+        <a href="https://www.facebook.com/IgrejaBatistadaFamilia?mibextid=ZbWKwL"><i class="gg-facebook"></i></a>
+        <a href="sobre.html" class="special" onclick="openNav()"><i class="gg-menu"></i></a>
+        <a href="#"><i class="gg-search"></i></a>
+
+    </div>
+   
+    <div class="sidenav">
+        <a href="agenda.html">Agenda</a>
+        <a href="historia.html">Historia</a>
+        <a href="horarios.html">Horarios dos cultos</a>
+        <a href="palavra.html">Palavra do pastor</a>
+        <a href="visao.html">Visão,missão e valores</a>
+    </div>
+    <div class="content">
+      <img src="imagens/img6.png" alt="Logo IBF" class="log">
+    </div>
+    <div class="paragrafo">
+      <h3 style="color: white;">Como Nasceu a Igreja Batista da Família</h3>
+      <p>Certamente, abençoando te abençoarei, e multiplicando te multiplicarei. Hebreus 6:14</p>
+      <p>Em suas orações Pr. Cleber (ainda como pastor auxiliar da IBMI) dizia para Senhor despretensiosamente que se um dia fosse da<br>
+     Sua vontade tirá-lo de onde estava para assumir o ministério em outro lugar, estaria disposto a fazer a Sua vontade, mas, sendo ele<br>
+     um homem temente fez prova de Deus e lhe disse em oração que primeiro deveriam acontecer 02 coisas:</p>
+     <ol class="c">
+        <li>Que deveria ser convidado por uma pessoa de fora;</li>
+        <li>Deveria ter a benção de Pr. Ubirajara Gomes e Silva (Pastor Presidente da IBMI).</li>
+     </ol>
+     <p>No ano de 2003 Pr. Marcos Bittar e sua esposa Cideia – Diretores Regionais do MMI – estavam pregando no Encontro Regional do<br>
+     MMI em Feira de Santana. Durante a pregação saíram do púlpito ao encontro de Pr. Cleber e sua esposa Joseneide conhecida<br>
+     carinhosamente como Neide no alto da arquibancada para lhes informar que o 1ª prova que ele havia feito ao Senhor estava para<br>
+     se cumprir.</p>
+     <p>No ano de 2004, o Ministério da Família da IBMI – liderado por Pr. Cleber e Neide – organiza o 1º Restaurando Famílias. Naquela<br>
+     noite a irmã Jaci procura Pr. Cleber para lhe revelar um sonho que havia tido com ele.</p>
+     <p>Algum tempo depois, ela descreveu o sonho através de uma carta que foi entregue posteriormente ao Pr. Cleber e hoje ao lermos<br>
+     a mesma podemos observar diversas semelhanças: a proximidade com o bairro do Cabula e a Paralela; A rua longa logo atrás do<br>
+     Extra; A rua onde estamos que sobe um pouco. Outro detalhe importante é que neste sonho o pastor quer entrar em contato com<br>
+     a “dona” da casa ao lado, e não o “dono”. Deus realmente nos conduziu até este lugar.</p>
+     <p>Durante as férias de 2005, numa conversa durante a madrugada, entre Neide e Pr. Cleber, ele começa a chorar repentinamente<br>
+     sentindo a presença de Deus que lhe comunica uma grande mudança para aquele ano que afetaria toda sua estrutura ministerial.</p>
+    <p>Ainda em 2005, Bispo Silvio, da Igreja Restauração e Vida CONVIDA Pr. Cleber e Neide para assumirem a igreja, pois os mesmos<br>
+     estavam de partida para outro estado. “Então se cumpre a 1ª prova”.</p>
+    <p>Antes de aceitarem o convite foram até ao gabinete do Pastor Ubirajara para compartilharem acerca do convite do Bispo Silvo<br>
+     onde foram aconselhados a prosseguirem com as negociações. Logo depois reuniram toda diretoria da IBMI para comunicarem<br>
+     que haveria grande possibilidade, ou seja, 99‰ de chances de uma transição. Após esta reunião saíram todos os diretores, ficando<br>
+     apenas Pr. Ubirajara, sua esposa Elisângela e Irmã Iraildes Barnabé, começou então uma oração em que Pr. Ubirajara direcionado<br>
+     pelo Espírito Santo ABENÇOAVA a saída de Pr. Cleber e Neide. “ Então se cumpre a 2ª prova”.</p>
+    <p>Entretanto mesmo sem dar a resposta positiva, foi recebido na Igreja Restauração e Vida com festa, faixas de boas vindas como<br>
+     novo Pastor Presidente, conheceu “sua” nova diretoria e etc.</p>
+    <p>Lembram que havia 99‰ de chance d’eles saírem? Esse 1‰ ainda deixava seus corações muito inquietos!</p>
+    <p>Sentiam que ainda não era aquilo o Senhor lhes havia preparado.</p>
+    <p>Na noite que antecedeu o anuncio oficial da sua saída da IBMI Deus visitou Pr. Cleber e anunciou-lhe que de fato seu tempo havia<br>
+     acabado naquela igreja, mas que o novo começo não seria na Igreja Restauração e Vida. Daí então se deu inicio a uma madrugada<br>
+     de intensa busca e comunhão com o Senhor, com a intenção de adquirir mais informações acerca dos planos de Deus a partir<br>
+     daquele dia. Ora buscava respostas em oração, ora buscava respostas na Palavra, ora não sabia o que pensar nem o falar com<br>
+     Deus. Foram momentos de medo e aflição. Mas em todo tempo tinha a certeza que Deus estaria conduzindo todos os seus passos.</p>
+    <p>Toda essa agitação acabou por chamar a atenção de Neide que já havia adormecido há muito tempo.</p>
+    <p>Às 5:00h da manhã, ela lhe questionou porque tanta inquietação durante esta noite. Foi então que ele comunicou à sua amada<br>
+     aquilo que Deus havia lhe dito, deixando-a com a sensação que o chão que estava debaixo dos seus pés havia desaparecido. Mas<br>
+     assim como seu esposo também tinha a certeza que Deus os conduziria.</p>
+     <p>As 6:00h da manhã veio a confirmação, através de um telefonema da irmã Emanuelle Fiúza, onde a mesma é portadora de um<br>
+     recado vindo da Igreja Batista Emanuel em Plataforma. D. Lêda (mãe de Emanuelle) participava de um culto quando uma irmã por<br>
+     nome Celeste foi tomada por Deus, que mandou o seguinte recado para Pr. Cleber: “Diga a meu servo que faça as a malas que<br>
+     estou nesse negócio”</p>
+    <p>Depois de uma madrugada com tantas novidades, finalmente tiveram 100‰ de certeza da sua saída e o coração do pastor<br>
+     encontrou paz, pois sabia que tudo já havia sido preparado com o imensurável amor de Deus.</p>
+    <p>Naquele mesmo dia, ainda sem saber para onde Deus os levaria, houve o anuncio oficial da sua saída da IBMI.</p>
+    <p>Estava pré-definido um novo começo. Alguns líderes e membros dos cursos de edificação do Ministério da Família da IBMI, que<br>
+     acompanhavam de perto, e em oração os fatos, iniciaram uma comunidade liderada pelo jovem casal Pr. Cleber e Neide Santos,<br>
+     que culminou com a origem da Igreja Batista da Família</p>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="colum">
+                <h2>Instagram</h2>
+                <a target="_blank" href="https://www.instagram.com/ibfsalvador?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <img src="imagens/img2.jpeg" alt="Imagem pastor" width="200" height="100">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/ibfsalvador?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <img src="imagens/img3.jpeg" alt="Imagem pastores" width="200" height="100"> 
+                </a>
+            </div>
+            <div class="colum">
+                <h2>facebook</h2>
+                <a target="_blank" href="https://www.facebook.com/IgrejaBatistadaFamilia?mibextid=ZbWKwL">
+                    <img src="imagens/img4.jpeg" alt="Imagem batismo" width="200" height="100">
+                </a>
+            </div>
+            <div class="colum">
+                <h2>Endereço</h2>
+                <p>ENDEREÇO: Rua Lívia Giffoni,<br>
+                 511 - Loteamento<br>
+                 Santa Tereza Luis<br>
+                 Anselmo - Salvador - BA -<br>
+                 CEP: 40.265-040<br>
+                 TELEFONE: 71 3233-4263<br>
+                 Email: igrejabatistadafamilia@gm</p>
+            </div>
+            <div class="colum">
+                <h2>Marca Registrada</h2>
+                <p>A marca Igreja Batista da<br>
+                 Família juntamente com<br>
+                 seus logotipos, são<br>
+                 registradas junto ao INPI<br>
+                 e protegidos por lei de<br>
+                 direitos autorais, e com<br>
+                 uso autorizado em todo<br>
+                 território brasileiro.</p>
+            </div>
+            <div class="colum">
+                <h2>Aviso Importante</h2>
+                <p>É TERMINANTEMENTE<br>
+                 PROIBIDO QUALQUER<br>
+                 USO, CÓPIA OU<br>
+                 REPRODUÇÃO DAS<br>
+                 MARCAS COMERCIAIS,<br>
+                 LOGOTIPOS,<br>
+                 INFORMAÇÕES,<br>
+                 IMAGENS OU<br>
+                 DESENHOS SEM A<br>
+                 PRÉVIA PERMISSÃO<br>
+                 ESCRITA DA IGREJA<br>
+                 BATISTA DA FAMÍLIA.</p>
+            </div>
+           </div>
+    </div>
+</body>
+</html>
